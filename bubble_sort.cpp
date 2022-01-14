@@ -3,14 +3,23 @@
 using namespace std;
 
 void Bubble_sort(int vec[], int n) {
+    int isSorted = 0;
     for (int i = 0; i < n - 1; i++)
     {
+        isSorted = 1;
         for (int j = 0; j < n-i-1; j++)
         {
             if(vec[j] > vec[j+1])
+            {
                 swap(vec[j], vec[j+1]);
+                isSorted = 0;
+            }
         }
-        
+
+        if (isSorted)
+        {
+            return;
+        } 
     }  
 }
 
