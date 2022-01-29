@@ -12,7 +12,7 @@ int main()
     int n =  sizeof(arr)/sizeof(arr[0]);
 
     print_array(arr,n);
-    int index = jump_search(arr,20, n);
+    int index = jump_search(arr,116, n);
     
     if(index > -1)
         cout << "element found at " << index << "\n";
